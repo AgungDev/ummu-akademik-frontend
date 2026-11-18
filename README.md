@@ -15,6 +15,12 @@ npm install
 npm run dev
 ```
 
+Vite menerima koneksi dari perangkat lain pada jaringan lokal. Buka alamat
+`http://<IP-LAN-komputer>:5173` dari perangkat yang terhubung ke Wi-Fi yang
+sama. Jika tidak dapat diakses, izinkan koneksi masuk TCP port `5173` pada
+Windows Firewall untuk jaringan **Private**. Batasi akses pada jaringan lokal
+yang dipercaya; server Vite ini untuk development, bukan deployment publik.
+
 `.env` boleh membiarkan `VITE_AUTH_BASE_URL` dan `VITE_API_BASE_URL` kosong
 untuk menggunakan proxy Vite. `VITE_AUTH_BASE_URL` mengatur origin Auth Service
 untuk SDK `@ganz404/js-auth`; `VITE_API_BASE_URL` mengatur API Gateway untuk
