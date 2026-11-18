@@ -27,6 +27,11 @@ untuk SDK `@ganz404/js-auth`; `VITE_API_BASE_URL` mengatur API Gateway untuk
 request API. Pada deployment, isi keduanya dengan origin yang dapat diakses
 browser dan pastikan kebijakan CORS mengizinkan origin frontend.
 
+Dengan callback Google `localhost`, mulai login Google dari browser komputer
+yang menjalankan service melalui `http://localhost:5173`. Perangkat lain di
+jaringan Wi-Fi dapat memakai login username/password; Google login dari
+perangkat lain memerlukan callback HTTPS yang valid.
+
 ## Route
 
 | Route | Halaman |
